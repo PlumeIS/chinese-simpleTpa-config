@@ -41,7 +41,7 @@ TpaToggle-Activated-Player: "&6你 &c同意&6 了&c%player%&6 的传送。"
 TpaToggle-Deactivated: "&6你 &c拒绝&6 传送到你这。"
 TpaToggle-Activated: "&6你 &c同意&6 传送到你这。"
 TpaToggled-Player-Message: "&6玩家 &拒绝 &6传送到他这"
-Player-Is-Player: "&6你不能 &c原地TP &6!"
+Player-Is-Player: "&6你不能 &c原 地 T P &6!"
 Already-A-TP-Request: "&6你已经 &c发送 &6了一个传送请求! 你可以使用 &c/tpcancel player &6来取消"
 Tpa-Usage-Message: "&6用法: &c/tpa (player)"
 Timed-Out-Message: "&6你的 &c传送请求&6 已超时!"
@@ -77,7 +77,7 @@ World-Doesnt-Exists-Or-Unloaded: "&6你试图传送的世界要么被卸载，�
 Accept-Button: "同意"
 Accept-Button-Color: "RED"
 Accept-Button-Set-Bold: true
-Accept-Button-Description: "&6点击 &c同意 &6 以接受请求!"
+Accept-Button-Description: "&6点击 &c同意 &6以接受请求!"
 
 #Middle 按钮配置
 Middle-Button: " | "
@@ -89,7 +89,7 @@ Middle-Button-Description: "&7 <- 选择 -> "
 Deny-Button: "拒绝"
 Deny-Button-Color: "RED"
 Deny-Button-Set-Bold: true
-Deny-Button-Description: "&6点击 &c拒绝 &6 以拒绝请求!"
+Deny-Button-Description: "&6点击 &c拒绝 &6以拒绝请求!"
 
 # 如果要对某些世界禁用simpletpa，可以通过添加-“世界名称”来添加它们
 # 被禁用的世界
