@@ -5,23 +5,23 @@
 # |____/  |_| |_| |_| |_| | .__/  |_|  \___|   |_|   | .__/   \__,_|
 #                         |_|                        |_|
 
-# Place Holders: %time% | %player% | %option%
+# 变量: %time% | %player% | %option%
 
 
 # !!!!!!!!!!!!!!!!
-# This options will support all plugins that use teleport stuff
-# If you want the plugin to log the previus teleport locations for the /back command from other plugins -> set this to true
+# 此选项将支持所有使用远程传送的插件
+# 如果您想让插件记录来自其他插件的/back命令的previus远程传输位置->将其设置为true
 enable-teleport-logging: false
 # !!!!!!!!!!!!!!!!
 
-#If you set it to true, you will disable the prefix
-#Make sure to restart the server in order to apply it
+#如果将其设置为true，则将禁用前缀
+#确保重新启动服务器以应用它
 disable-prefix: false
 prefix: "&c[&6SimpleTpa&c]"
 
-#Messages:
-# TO DISABLE A MESSAGE - SET IT TO - NONE
-# EXAMPLE:
+#消息:
+# 禁用消息-将其设置为-NONE
+# 例如:
 # Console-Isnt-Player: "none"
 Console-Isnt-Player: "&6无法在控制台使用 &cSimpleTpa&6!"
 Disabled-World-Message: "&6你无法在这个世界使用 &cSimpleTpa &6!"
@@ -38,9 +38,9 @@ TpaToggle-Deactivated-Player-2: "&c%player% &6拒绝传送到你这!"
 TpaToggle-Activated-Player-2: "&c%player% &6同意传送到你这!"
 TpaToggle-Deactivated-Player: "&6你 &c拒绝&6 了 &c%player%&6 的传送。"
 TpaToggle-Activated-Player: "&6你 &c同意&6 了&c%player%&6 的传送。"
-TpaToggle-Deactivated: "&6你 &c拒绝&6 传送到你。"
-TpaToggle-Activated: "&6你 &c同意&6 传送到你"
-TpaToggled-Player-Message: "&6玩家 &拒绝 &6传送到他"
+TpaToggle-Deactivated: "&6你 &c拒绝&6 传送到你这。"
+TpaToggle-Activated: "&6你 &c同意&6 传送到你这。"
+TpaToggled-Player-Message: "&6玩家 &拒绝 &6传送到他这"
 Player-Is-Player: "&6你不能 &c原地TP &6!"
 Already-A-TP-Request: "&6你已经 &c发送 &6了一个传送请求! 你可以使用 &c/tpcancel player &6来取消"
 Tpa-Usage-Message: "&6用法: &c/tpa (player)"
@@ -70,77 +70,75 @@ Time-Left: "&6你有 &c%seconds% &6秒去同意或拒绝请求"
 Damaged-Cancel-Message: "&6传送中断!你受伤了!"
 Different-Gamemode: "&6你不能使用任何传送指令 因为你在&c旁观 &6模式!"
 World-Doesnt-Exists-Or-Unloaded: "&6你试图传送的世界要么被卸载，要么不存在!"
-## BUTTONS
-#Here you can find the colors https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/ChatColor.html
+## 按钮
+#你可以找到颜色名称在 https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/ChatColor.html
 
-#Accept Button Properties
+#Accept 按钮配置
 Accept-Button: "同意"
 Accept-Button-Color: "RED"
 Accept-Button-Set-Bold: true
 Accept-Button-Description: "&6点击 &c同意 &6 以接受请求!"
 
-#Middle Button Properties
+#Middle 按钮配置
 Middle-Button: " | "
 Middle-Button-Color: "GRAY"
 Middle-Button-Set-Bold: true
 Middle-Button-Description: "&7 <- 选择 -> "
 
-#Deny Button Properties
+#Deny 按钮配置
 Deny-Button: "拒绝"
 Deny-Button-Color: "RED"
 Deny-Button-Set-Bold: true
 Deny-Button-Description: "&6点击 &c拒绝 &6 以拒绝请求!"
 
-# If you want to disable simpletpa for some worlds, then you can add them by adding - 'NameOfTheWorld'
-#Disabled Worlds:
+# 如果要对某些世界禁用simpletpa，可以通过添加-“世界名称”来添加它们
+# 被禁用的世界
 disabled-worlds:
   - 'disabledworld'
 
-# If you set anything to true, you will disable it.
-# B A C K    S E T T I N G S
+# 如果将任何内容设置为true，则将禁用它。
+# 返 回 设 置 （/back）
 
-#If you want to disable the back command, then set this to true
+# 如果要禁用back命令，请将其设置为true
 disable-back-command: false
 
-# If you want to disable the death coords message, then set this to true
+# 如果要禁用death coords消息，请将其设置为true
 disable-coords-message: false
 
-# If you want to disable saving the death location, then set this to true
+# 如果要禁用保存死亡位置，请将其设置为true
 disable-back-on-death: false
 
-# If you want to disable saving the TP Locations such as TPA, TPAHERE, then set this to true
+# 如果要禁用保存TPA、TPAHERE等TP位置，请将其设置为true
 disable-back-on-tp: false
 
-#Booleans
-#  If you want to disable checking for gamemode if equals to spectator, then set this to true
+#布尔类型
+#  如果你要关闭检查模式是否为旁观，请将其设置为true
 disable-gamemode-check: false
-#  If you want to disable saving the accept or deny buttons, then set this to true
+#  如果要禁用保存接受或拒绝按钮，请将其设置为true
 disable-accept-deny-buttons: false
-#  If you want to disable saving the particles, then set this to true
+#  如果要禁用保存粒子，请将其设置为true
 disable-particles: false
-#  If you want to disable saving the move system, then set this to true
+#  如果要禁用保存移动系统，请将其设置为true
 disable-move-system: false
 
-# If you want to disable the invincibility after teleporting, then set this to true
+# 如果你想在传送后禁用无敌，那么将其设置为true
 disable-invincibility: false
 
-# Everything works with SECONDS
-#Integers
+# 所有设置单位为秒
+#整数类型
+#这将使传送后无敌状态保持X秒
 invincibility-seconds: 0
-#This will keep the teleport request alive for X seconds
+#这将使传送请求持续X秒
 keep-alive: 60
-#This will delay the teleportation for X seconds
+#这将延迟传送X秒
 delay-back-command: 0
 delay-teleportation: 0
-#Cooldowns
+#冷却时间
 back-cooldown: 0
 tpa-cooldown: 0
 tpahere-cooldown: 0
 tpahereall-cooldown: 0
-#To set a custom cooldown, you need to add a permission : simpletpa.cooldown.Y.X where Y is the command and  X are the seconds.
-#The options for commands are: tpa | tpahere | back | tpahereall
-#Example: simpletpa.cooldown.tpa.300 | simpletpa.cooldown.tpahere.300 | simpletpa.cooldown.tpahereall.300 | simpletpa.cooldown.back.300
-#This will set the cooldown for tpa/ tpahere/ tpahereall / back to 300 seconds
-
-
-
+#要设置自定义冷却时间，需要权限 : simpletpa.cooldown.Y.X 其中Y是命令，X是秒。
+#设置所对应的命令分别为: tpa | tpahere | back | tpahereall
+#例如: simpletpa.cooldown.tpa.300 | simpletpa.cooldown.tpahere.300 | simpletpa.cooldown.tpahereall.300 | simpletpa.cooldown.back.300
+#这将为 tpa/ tpahere/ tpahereall / back 设置300秒的冷却时间
