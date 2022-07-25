@@ -132,13 +132,13 @@ invincibility-seconds: 0
 #这将使传送请求持续X秒
 keep-alive: 60
 #这将延迟传送X秒
-delay-back-command: 0
-delay-teleportation: 0
+delay-back-command: 5
+delay-teleportation: 5
 #冷却时间
-back-cooldown: 0
-tpa-cooldown: 0
-tpahere-cooldown: 0
-tpahereall-cooldown: 0
+back-cooldown: 10
+tpa-cooldown: 10
+tpahere-cooldown: 10
+tpahereall-cooldown: 10
 #要设置自定义冷却时间，需要权限 : simpletpa.cooldown.Y.X 其中Y是命令，X是秒。
 #设置所对应的命令分别为: tpa | tpahere | back | tpahereall
 #例如: simpletpa.cooldown.tpa.300 | simpletpa.cooldown.tpahere.300 | simpletpa.cooldown.tpahereall.300 | simpletpa.cooldown.back.300
