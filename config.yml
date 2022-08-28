@@ -6,11 +6,11 @@
 #                         |_|                        |_|
 
 # 翻译: 很绿の羽毛 | PlumeIS
-# 变量: %time% | %player% | %option%
+# 占位符: %time% | %player% | %option%
 
 
 # !!!!!!!!!!!!!!!!
-# 此选项将支持所有使用远程传送的插件
+# 此选项将用来支持所有使用远程传送的插件
 # 如果您想让插件的/back命令记录来自其他插件的previus远程传送位置->将其设置为true
 enable-teleport-logging: false
 # !!!!!!!!!!!!!!!!
